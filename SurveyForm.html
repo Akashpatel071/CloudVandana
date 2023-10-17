@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    body {
+    display: flex;
+     justify-content: center; 
+    align-items: cnter;
+    height: 30%; 
+    margin: 0;
+}
+.center {
+    text-align: center;
+    width: 300px;
+}
+.ma1
+{
+    position: relative;
+    margin-right: 12px;
+    padding-left: 12px;
+}
+.ak
+{
+    padding: 0px;
+}
+.btn1
+{
+    background-color: lightgreen;
+    position: relative;
+    right: 20px;
+}
+.btn2
+{
+    background-color: red;
+    position: relative;
+    left:12px;
+}
+   </style>
+
+    </head>
+    <body >
+    <div class="center">
+        <div>Survey form</div>
+        <br>
+        <br>
+        <form action="" class="align center">
+            <table>
+                <tr>
+           <td class="align right" > <label>FirstName:</label></td>
+            <td class="align left" ><input id="fname" type="text"></td>
+        <br>
+        
+                </tr>
+        <tr>
+            <td class="align right"><label>LastName:</label></td>
+            <td class="alighn left" ><input id="lname" type="text"></td>
+           
+        </tr>
+       
+        <tr>
+            <td class="align right ">Date Of Birth:</td>
+            <td class="align left" ><input id="dob" type="date"></td>
+            
+        </tr>
+       
+        <tr>
+            <td class="align right">Country Name:</td>
+            <td class="align left" >
+                <select name="" >
+                    <option value="" id="country">Select country</option>
+                    <option value="">India</option>
+                    <option value="">USA</option>
+                    <option value="">Australia</option>
+                    <option value="">UAE</option>
+                    <option value="">NewZeland</option>
+                    <option value="">Srilanka</option>
+                </select>
+            </td>
+
+        </tr>
+       
+        <tr>
+            <td class="align right">Gender:</td>
+            
+            <td class="ak"><input type="checkbox" id="mcheck" ></td>
+            <td name="ma1">Male</td>
+            <td><input type="checkbox" id="fcheck"></td>
+            <td>Female</td>
+
+            
+        </tr>
+        
+        <tr>
+            <td class="align right">Profession:</td>
+            <td class="align left"><input type="text" id="pro"></td>
+        </tr>
+       
+        <tr>
+            <td class="align right">Email:</td>
+            <td class="align left"><input  id="email" type="text" ></td>
+         
+        </tr>
+       
+       <tr>
+          <td class="align right">PhoneNumber:</td>
+          <td class="align left"><input type="number" id="phnnum"></td>
+       </tr>
+      
+       <br>
+      
+   
+    
+    </table>
+         <br>
+        <!-- <td align="right"></td> -->
+        <ul>
+        <span id="res1"></span>
+        <br>
+        <span id="res2"></span>
+        <br>
+        <span id="res3"></span>
+        <br>
+        <span id="res4"></span>
+        <br>
+        <span id="res5"></span>
+        <br>
+        <span id="res6"></span>
+        <br>
+        <span id="res7"></span>
+        <br>
+        <span id="res8"></span>
+        
+        <br>
+         <input type="button" class="btn1" onclick="validate()" value="register">
+        <button class="btn2" onclick="reset()">Reset</button>
+    
+        </form>
+    </div>
+    <script src="surveyform.js"></script>
+    </body>
+</html>
